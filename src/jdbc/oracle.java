@@ -1,4 +1,4 @@
-package jdbc;
+/*package jdbc;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -13,13 +13,13 @@ public static void main(String args[]) throws FileNotFoundException, IOException
 	ResultSet rs=null;
 	try{
 		//Class.forName("oracle.jdbc.driver.OracleDriver");
-		DriverManager.registerDriver(new OracleDriver());//Á½ÖÖ·½Ê½
-		//»ñÈ¡Á¬½ÓµÄ·½Ê½
+		DriverManager.registerDriver(new OracleDriver());//ï¿½ï¿½ï¿½Ö·ï¿½Ê½
+		//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ÓµÄ·ï¿½Ê½
 	   // conn=DriverManager.getConnection("jdbc:oracle:thin:@172.20.108.23:1521:xe","system","admin");
 		Properties prop=new Properties();
-		//prop.put("user", "admin");//´Ë²Ù×÷µÈ¼ÛÓÚÒ»ÏÂ²Ù×Ý
-		/*prop.setProperty("user", "system");
-		prop.setProperty("password", "admin");*///´ÓÅäÖÃÎÄ¼þÖÐ¼ÓÔØ
+		//prop.put("user", "admin");//ï¿½Ë²ï¿½ï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½Ò»ï¿½Â²ï¿½ï¿½ï¿½
+		prop.setProperty("user", "system");
+		prop.setProperty("password", "admin");//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½
 		prop.load(new FileInputStream("src/jdbcTest/jdbc.properties"));
 		conn=DriverManager.getConnection("jdbc:oracle:thin:@172.20.108.23:1521:xe",prop);
 		
@@ -28,7 +28,7 @@ public static void main(String args[]) throws FileNotFoundException, IOException
 		stat.executeQuery(sql);
         rs=stat.executeQuery(sql);
      	while (rs.next()){
-     		System.out.println(rs.getString(2));//È¡µ±Ç°ÐÐÖÐÃûÎªidÁÐµÄÊý¾Ý
+     		System.out.println(rs.getString(2));//È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªidï¿½Ðµï¿½ï¿½ï¿½ï¿½
      		System.out.println(rs.getString("id"));
     		}
      	if(rs!=null){
@@ -48,3 +48,4 @@ public static void main(String args[]) throws FileNotFoundException, IOException
 }
 
 }
+*/
